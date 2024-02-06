@@ -120,26 +120,20 @@ const TaskBoard = () => {
 
         {searchText.length > 0 && filteredTasks.length === 0 && (
           <p className=" dark:text-neutral-500 flex items-center gap-2">
-            No task found!
+            No task found for{" "}
+            <span className="dark:text-neutral-300">{searchText}</span>!
           </p>
         )}
         {filter.fav && filteredTasks.length === 0 && (
           <p className=" dark:text-neutral-500 flex items-center gap-2">
-            No task found!
+            No favourite tasks found!
           </p>
         )}
         {filter.compelete && filteredTasks.length === 0 && (
           <p className=" dark:text-neutral-500 flex items-center gap-2">
-            No task found!
+            No Complete tasks found!
           </p>
         )}
-        {filter.pType.low ||
-          filter.pType.mid ||
-          (filter.pType.high && (
-            <p className=" dark:text-neutral-500 flex items-center gap-2">
-              No task found!
-            </p>
-          ))}
       </section>
     </div>
   );
