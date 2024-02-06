@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply font-sans antialiased overflow-x-hidden;
+  }
+
+  dark {
+    @apply bg-neutral-950 text-neutral-300;
+  }
+
+  
+}
